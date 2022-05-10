@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ejercicio con Javascript</title>
+</head>
+<body>
+	<h1 id="miTitulo">Título original</h1>
+	<p>
+		Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Quae assumenda deleniti, rem ullam, voluptas sed illo, id labore veniam esse tempora necessitatibus enim. Iste rerum fuga iusto sunt, esse nihil?
+	</p>
+	<button id="btn_cambiaTexto">Cambia título</button>
+
+	<script type="text/javascript">
+		
+		const contenidoInicial = 'Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Quae assumenda deleniti, rem ullam, voluptas sed illo, id labore veniam esse tempora necessitatibus';
+
+		const miBoton = document.getElementById('btn_cambiaTexto');
+
+		
+		miBoton.onclick = function(){
+			const titulo_h1 = document.getElementById('miTitulo');
+			titulo_h1.innerHTML = "Los mejores en JavaScript";
+		};
+
+
+
+
+		console.log('Aqui tenemos información extra')
+		console.log(miBoton);
+		console.dir(miBoton);
+	</script>
+	
+</body>
+</html>

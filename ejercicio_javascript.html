@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ejercicio JavaScript</title>
+</head>
+<body>
+	<h1>Ejercicio de Javascript</h1>
+	<p id="bloque_texto">
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt laudantium earum,</p>
+	<button id="btn_cambia_texto">Cambiar texto</button>
+
+	<script type="text/javascript">
+		const parrafoInicial ='Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt laudantium earum,';
+		const parrafo = document.getElementById('bloque_texto');
+
+		let cambiado = false;
+
+		const boton = document.getElementById('btn_cambia_texto');
+
+		boton.onclick = function(){
+			if (cambiado === true) {
+				parrafo.innerHTML = parrafoInicial;
+				cambiado = false;
+			}else{
+				parrafo.innerHTML = 'Ha funcionado el cambio';
+				cambiado = true;	
+			}
+
+			console.log('La variable "cambiado" tiene valor : ' + cambiado);	
+		};
+	</script>
+</body>
+</html>
